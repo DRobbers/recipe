@@ -21,20 +21,63 @@ html {
 img {
     max-width: 100%;
 }
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+
 html, body {
     margin:  0px;
     padding: 0px;
     border: 0px;
+   
 }
-
-
+h1, h2, h3, nav a, nav span, figcaption, menu li, #social li, footer {
+    font-family: 'Bebas Neue', cursive;
+} 
+nav a, nav span, figcaption, menu li, #social li, footer {
+    font-size: 20px;
+    font-weight: 400;
+}
+p, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
 body {
    width: 414px;
-   font-family: 'Courier New', Courier, monospace;
    background-color: #F2F2F2;
    color: #0D0D0D;
    margin: 0 auto;
 }
+header {
+    padding-top: 60px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+h1 {
+    line-height: normal;
+    
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+#main_Container {
+    line-height: 2em;
+}
+
 #sideNav {
     outline: solid black;
    
