@@ -1,0 +1,45 @@
+/* Color Pallette
+Black = #0D0D0D
+Light = #F2F2F2
+Dark Green = #7ABFBF
+Light Green = rgba(122, 191, 191, .5)
+50% transparency
+Orange = #EB5428
+
+*/
+
+/*  Global Styles*/
+
+html {
+    box-sizing: border-box;
+    
+}
+*, *:before, *after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+html, body {
+    margin:  0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+body {
+   width: 414px;
+   font-family: 'Courier New', Courier, monospace;
+   background-color: #F2F2F2;
+   color: #0D0D0D;
+   margin: 0 auto;
+}
+#sideNav {
+    outline: solid black;
+   
+}
+
+#side_Dishes {
+    background-color:#7ABFBF;
+}
