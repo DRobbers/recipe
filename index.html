@@ -12,31 +12,31 @@
 </head>
 <body>
     
-<header>
-    
-
-    <section id="sideNav">   
+<header id="sideNav">
+   
         <h1>Street Tacos</h1>
-            <menu>
-                <li>Save<a href="#save">
+        <div class="flex-container">
+            <ul>
+                <li>Save
                     <svg class="save_Icon">
                     <use xlink:href="#icon icon-tabler icon-tabler-download"></use>
-                    </svg></a></li>
-                <li>Share</li>
+                    </svg></li>
+                <li>Share
                     <svg class="share_Icon">
                     <use xlink:href="#icon icon-tabler icon-tabler-share"></use>
-                    </svg>
-                <li>Print</li>
+                    </svg></li>
+                <li>Print
                     <svg class="print_Icon">
                     <use xlink:href="#icon icon-tabler icon-tabler-printer"></use>
-                    </svg>
-                <li>Jump</li>
+                    </svg></li>
+                <li>Jump
                     <svg class="jump_Icon">
                     <use xlink:href="#icon icon-tabler icon-tabler-file-symlink"></use>
-                    </svg>
+                    </svg></li>
 
-                </menu>
-    </section>    
+                </ul>
+            </div>
+      
 </header>
     <main>
      <section id="main_Container">
@@ -54,7 +54,7 @@ Total Time: 20 minutes
 Author: Taco Cheesington
 Servings: 6 Tacos
 </section>
-<section id="directions">
+<section id="ingredients">
     <h2>Ingredients</h2>
     <ul>
         <li>Flank steak</li>
@@ -73,7 +73,7 @@ Servings: 6 Tacos
 <section id="directions">
 <h2>Directions</h2>
 <ol>
-<li>Cut and mi>x: Cut the flank steak into one inch pieces. In a medium sized bowl add the soy sauce, Worcestershire, juice from one lime, cilantro, chili powder, cumin, and salt and pepper.</li>
+<li>Cut and mix: Cut the flank steak into one inch pieces. In a medium sized bowl add the soy sauce, Worcestershire, juice from one lime, cilantro, chili powder, cumin, and salt and pepper.</li>
 <li>Marinate: Add the steak and let marinate in the fridge for 1-2 hours.</li>
 <li>Cook the meat: Heat a medium sized skillet to medium high heat. Add the steak and marinade and cook for about 5-7 minutes or until no longer pink.</li>
 <li>Add toppings: Put the steak in the center of your tortilla with desired toppings.</li>
@@ -120,7 +120,10 @@ Servings: 6 Tacos
 <input type="checkbox" id="dropdown">
 <label for="dropdown"><span></span></label>
 <menu>
-<li><a href="#home">Home (logo svg)</a></li>
+<a href="#home">
+    <svg class="logo_Icon">
+        <use xlink:href="#icon icon-tabler icon-tabler-tools-kitchen"></use>
+        </svg></a>
 <li><a href="#breakfast"><img src="images/breakfast.png" alt="Breakfast Link"><br>Breakfast</a></li>
 <li><a href="#brunch"><img src="images/brunch.png" alt="Brunch Link"><br>Brunch</a></li>
 <li><a href="#lunch"><img src="images/lunch.png" alt="Lunch Link"><br>Lunch</a></li>
@@ -128,13 +131,35 @@ Servings: 6 Tacos
 <li><a href="#appetizers"><img src="images/appetizers.png" alt="Appetizers Link"><br>Appetizers</a></li>
 <li><a href="#desserts"><img src="images/desserts.png" alt="Desserts Link"><br>Desserts</a></li>
 <li><a href="#beverages"><img src="images/beverages.png" alt="Beverages Link"><br>Beverages</a></li>     
-Avatar (Avatar svg)
+<p>Avatar (Avatar svg)
 Search (search svg)
+Connect</p>
 </menu>
 </nav>
-<footer>
-Connect
-Social Media Links
+<footer id="social">
+
+<h2>Social Media Links</h2>
+<div class="footer-container">
+    <ul>
+            <li>Facebook<svg class="facebook_Icon">
+            <use xlink:href="#icon icon-tabler icon-tabler-brand-facebook"></use>
+            </svg></li>
+
+            <li>Instagram<svg class="instagram_Icon">
+            <use xlink:href="#icon icon-tabler icon-tabler-brand-instagram"></use>
+            </svg> </li>
+        
+            <li>YouTube<svg class="youtube_Icon">
+            <use xlink:href="#icon icon-tabler icon-tabler-brand-youtube"></use>
+            </svg></li>
+         
+            <li>Tik Tok <svg class="tiktok_Icon">
+            <use xlink:href="#icon icon-tabler icon-tabler-brand-tiktok"></use>
+            </svg></li>
+           
+
+        </ul>
+    </div>
 ●	Facebook (facebook svg)
 ●	Instagram (instagram svg)
 ●	YouTube (youtube svg)

@@ -8,7 +8,7 @@ Orange = #EB5428
 
 */
 
-/*  Global Styles*/
+/*  Global Set Up Styles - Responsive - Small screen first with @media modifications*/
 
 html {
     box-sizing: border-box;
@@ -31,6 +31,7 @@ html, body {
     border: 0px;
    
 }
+/* Set up fonts for project */
 h1, h2, h3, nav a, nav span, figcaption, menu li, #social li, footer {
     font-family: 'Bebas Neue', cursive;
 } 
@@ -48,6 +49,8 @@ dt {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
+
+/* Layout for small screen first */
 }
 body {
    width: 414px;
@@ -56,19 +59,23 @@ body {
    margin: 0 auto;
 }
 header {
-    padding-top: 60px;
+    padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 [href="#home"] {
-text-transform: capitalize;
 position: absolute;
 top: 0;
-left: 90px;
-padding: 16px 16px; 
+left: 177px;
+padding: 0; 
+background-color: #EB5428;
+width: 200px;
+height: 62px;
 
 }
+
+
 nav h2 {
     visibility: hidden;
     height: 1px;
@@ -100,7 +107,7 @@ nav {
     z-index: 1;
     text-transform: uppercase;  
 }
-ul, menu {
+menu {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -109,12 +116,12 @@ ul, menu {
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-li a {
+menu li a {
     display: block;
-    padding: 20px 20px;
+    padding: 0px 0px;
     text-decoration: none;
 }
-a:hover, input:hover {
+menu a:hover, input:hover {
     background-color: #590242;
 }
 label {
@@ -178,11 +185,101 @@ input:checked ~ label:not(.steps) span:after {
 }
 
 
-#sideNav {
+#sideNav li {
     outline: solid black;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+
    
 }
+#sideNav ul {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 30px;
+    
+} 
+#ingredients {
+    line-height: 2em;
+}
+#directions {
+    line-height: 1.5em;
+}
+
 
 #side_Dishes {
-    background-color:#7ABFBF;
+    background-color: #7ABFBF;
+}
+#side_Dishes img {
+    width: 25%;
+    padding-left: 10px;
+}
+
+menu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+label {
+    cursor:  pointer;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #F2F2F2;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+
+input:checked ~ menu {
+    max-height: 500px;
+}
+
+input:checked label span {
+    background: transparent;
+}
+
+input:checked ~ label span::before {
+    transform: rotate(-45deg);
+}
+
+input:checked ~ label apan::after {
+    transform: arotate(45deg);
+}
+input checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+footer h2 {
+    visibility: hidden;
+    height: 1px; 
+}
+.footer-container ul {
+    
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 20%;
+    
+} 
+svg {
+    width:80px;
 }
