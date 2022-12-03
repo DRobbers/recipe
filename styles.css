@@ -60,17 +60,23 @@ dt {
     grid-column: 1 / span 12;
     grid-row: 1;
 }
-/* .nav-container {
-    grid-column: 1/13;
-} */
-#sideNav {
-    grid-column: 1/ 13;
+.nav-container {
+    grid-column: 1 / 13;
     grid-row: 1;
+}
+#sideNav {
+    grid-column: 1 / 13;
+    grid-row: 2;
 }
 .main {
     grid-column: 1 / 13;
     grid-row: 3;
 }
+.main img {
+    width: 414px;
+}
+
+
 #side_Dishes {
     grid-column: 1 / 13;
     grid-row: 4;
@@ -109,7 +115,7 @@ body h1, h2 {
     justify-content: center;
 }
 header {
-    padding-top: 5px;
+    padding-top: 65px;
     padding-bottom: 5px;
     padding-left: 0px;
     padding-right: 0px;
@@ -118,12 +124,12 @@ header {
 position: absolute;
 top: 0;
 left: 107px;
-padding: 0; 
+padding: 10px 5px; 
 background-color: #EB5428;
 width: 200px;
 height: 60px;
-/* display: flex;
-justify-content: center; */
+display: flex;
+justify-content: center;
 
 }
 body svg {
@@ -166,12 +172,24 @@ h3 {
 }
 nav {
     width: 414px;
-    height: 62px;
+    height: 90px;
     position: absolute;
     top: 0;
     z-index: 1;
     text-transform: uppercase;  
+   
 }
+
+
+
+menu {
+    position: absolute;
+    top: 10px;
+    width: 400px;
+    background-color: #F2F2F2;
+    
+}
+
 menu {
     text-align: center;
     margin: 0;
@@ -180,14 +198,17 @@ menu {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    
 }
+
 menu li a {
     display: block;
     padding: 0px 0px;
     text-decoration: none;
 }
 menu a:hover, input:hover {
-    background-color: #590242;
+    background-color: #EB5428;
+    color:#F2F2F2;
 }
 label {
     cursor: pointer;
@@ -263,9 +284,14 @@ input:checked ~ label:not(.steps) span:after {
     font-size: 17px;
 
 } */
+.right_icon {
+    position:absolute;
+    left: 370px;
+    top: 20px;
 
+}
 #sideNav li {
-    outline: solid black;
+  
     text-decoration: none;
     text-transform: capitalize;
     list-style: none;
