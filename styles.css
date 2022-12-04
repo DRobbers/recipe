@@ -125,7 +125,8 @@ header {
     padding-left: 0px;
     padding-right: 0px;
 }
- label {
+
+ .search-bar label {
     display: block;
     font: 1rem 'Montserrat', sans-serif;
     display: flex;
@@ -165,7 +166,7 @@ left: 107px;
 padding: 10px 5px; 
 background-color: #EB5428;
 width: 200px;
-height: 60px;
+height: 100px;
 display: flex;
 justify-content: center;
 
@@ -225,7 +226,7 @@ nav {
 
 
 
-menu {
+.menu {
     position: absolute;
     top: 10px;
     width: 400px;
@@ -233,7 +234,7 @@ menu {
     
 }
 
-menu {
+.menu {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -244,16 +245,16 @@ menu {
     
 }
 
-menu li a {
+.menu li a {
     display: block;
     padding: 0px 0px;
     text-decoration: none;
 }
-menu a:hover, input:hover {
+.menu a:hover, input:hover {
     background-color: #EB5428;
     color:#F2F2F2;
 }
-label {
+.menu label {
     cursor: pointer;
     display: block;
     padding: 10 px 20px;
@@ -262,7 +263,7 @@ label {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-label span {
+.menu label span {
     background-color: #F2F2F2; 
     display: block;
     height: 2px;
@@ -270,7 +271,7 @@ label span {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-label span:before, label span:after {
+.menu label span:before, label span:after {
     background-color: #F2F2F2;
     content: '';
     display: block;
@@ -279,10 +280,10 @@ label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
-label span:before {
+.menu label span:before {
     top: 5px;
 }
-label span:after {
+.menu label span:after {
     top: -5px;
 
 }
@@ -313,6 +314,9 @@ input:checked ~ label:not(.steps) span:after {
 #main_Container {
     line-height: 1.5em;
     margin: 3px 8px;
+}
+#main_Container img {
+    margin: 0;
 }
 /* .search {
     overflow: hidden;
@@ -371,7 +375,7 @@ input:checked ~ label:not(.steps) span:after {
     padding-left: 10px;
 }
 
-menu {
+.menu {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
