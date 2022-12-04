@@ -107,7 +107,12 @@ article img {
 
 }
 
+#Details dt {
+    float: left;
+    padding: 0 20px;
+    
 
+}
 
 body {
    width: 414px;
@@ -156,7 +161,18 @@ form {
     font-weight: 700;
 }
 
-
+#ratings_container {
+    width: 20px;
+    width: 130px;
+    display: flex;
+    flex: 1 0 1fr;
+    float: right;
+   margin-right: 10px;
+  
+}
+#ratings_container + p {
+    font-weight: 700;
+}
 
 
 [href="#home"] {
@@ -245,7 +261,7 @@ nav {
     
 }
 
-.menu li a {
+menu li a {
     display: block;
     padding: 0px 0px;
     text-decoration: none;
@@ -254,7 +270,7 @@ nav {
     background-color: #EB5428;
     color:#F2F2F2;
 }
-.menu label {
+menu label {
     cursor: pointer;
     display: block;
     padding: 10 px 20px;
@@ -263,7 +279,7 @@ nav {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-.menu label span {
+menu label span {
     background-color: #F2F2F2; 
     display: block;
     height: 2px;
@@ -271,7 +287,7 @@ nav {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-.menu label span:before, label span:after {
+menu label span:before, label span:after {
     background-color: #F2F2F2;
     content: '';
     display: block;
@@ -280,10 +296,10 @@ nav {
     transition: all .2s ease-out;
     width: 100%;
 }
-.menu label span:before {
+menu label span:before {
     top: 5px;
 }
-.menu label span:after {
+menu label span:after {
     top: -5px;
 
 }
@@ -315,9 +331,9 @@ input:checked ~ label:not(.steps) span:after {
     line-height: 1.5em;
     margin: 3px 8px;
 }
-#main_Container img {
+/* #main_Container img {
     margin: 0;
-}
+} */
 /* .search {
     overflow: hidden;
     background-color: #F2F2F2;
@@ -375,7 +391,7 @@ input:checked ~ label:not(.steps) span:after {
     padding-left: 10px;
 }
 
-.menu {
+menu {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -438,14 +454,31 @@ footer h2 {
     display: flex;
     flex-direction: row;
     flex: 0 1 20%;
-  
-    
-    
+    text-decoration: none;
+   
 } 
+#social li {
+    color: #EB5428;
+    font-weight: 700;    
+   list-style: none;
+    text-transform: capitalize;
+    font-size: 16px;
+
+}
+#social p {
+    width: 414px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
 footer img {
     width: 50%;
-  
+    padding-left: 100px;
+ 
 }
 svg {
     width:80px;
+   
 }
