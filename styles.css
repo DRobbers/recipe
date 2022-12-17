@@ -68,6 +68,12 @@ dt {
     grid-column: 1 / 13;
     grid-row: 2;
 }
+#sideNav h1 {
+   
+    grid-column: 4 / 10;
+    grid-row: 2;
+
+}
 .main {
     grid-column: 1 / 13;
     grid-row: 3;
@@ -114,6 +120,7 @@ article img {
 
 }
 
+
 body {
    width: 414px;
    background-color: #F2F2F2;
@@ -130,20 +137,23 @@ header {
     padding-left: 0px;
     padding-right: 0px;
 }
+header h1 {
+    line-height: normal;
+}
 
- .search-bar label {
+ /* .search-bar label {
     display: block;
     font: 1rem 'Montserrat', sans-serif;
     display: flex;
     position:absolute;
     top: 20px;
     left: 125px;
-}
-input, label {
+} */
+/* input, label {
     margin: .4rem 0;
 
-}
-form {
+} */
+/* form {
     max-width: 250px;
     margin: 2rem auto;
     font-family:'Montserrat', sans-serif; 
@@ -159,7 +169,7 @@ form {
     text-transform: capitalize;
     font-family:'Montserrat', sans-serif; 
     font-weight: 700;
-}
+} */
 
 #ratings_container {
     width: 20px;
@@ -175,40 +185,50 @@ form {
 }
 
 
+
 [href="#home"] {
 position: absolute;
 top: 0;
-left: 107px;
+left: 207px;
 padding: 10px 5px; 
 background-color: #EB5428;
-width: 200px;
-height: 100px;
-display: flex;
+width: 180px;
+max-width: 180px;
+height: 70px;
+display:flex;
 justify-content: center;
 
 }
+#home svg {
+    position: absolute;
+    left: 207px;
+    top: 0;
+}
+
 body svg {
     height: 60px;
     width: 61px;
+    
 
 }
 
-nav menu {
+/* nav menu {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 nav h2 {
     visibility: hidden;
     height: 1px;
 }
 nav img {
-    visibility: hidden;
+    visibility:hidden;
     width: 5px;
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
+    
 }
 
 h1 {
@@ -226,10 +246,10 @@ h3 {
     font-size: 25px;
  
 }
-.nav_container h3 {
+/* .nav_container h3 {
     margin: 0;
     margin-left: 10px;
-}
+} */
 nav {
     width: 414px;
     height: 90px;
@@ -242,44 +262,47 @@ nav {
 
 
 
-.menu {
+/* menu {
     position: absolute;
     top: 10px;
     width: 400px;
     background-color: #F2F2F2;
     
-}
+} */
 
-.menu {
+menu {
     text-align: center;
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
+    background-color: #F2F2F2;
     max-height: 0;
     transition: max-height .2s ease-out;
     
 }
 
-menu li a {
+ menu li a {
     display: block;
-    padding: 0px 0px;
+    padding: 20px 20px;
     text-decoration: none;
+    color:#7ABFBF;
 }
 .menu a:hover, input:hover {
     background-color: #EB5428;
     color:#F2F2F2;
 }
-menu label {
+ label {
     cursor: pointer;
     display: block;
-    padding: 10 px 20px;
+    padding: 10px 20px;
     margin-top: -10px;
     position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
+    user-select: none;
+  
 }
-menu label span {
+
+label span {
     background-color: #F2F2F2; 
     display: block;
     height: 2px;
@@ -287,7 +310,7 @@ menu label span {
     transition: background-color .2s ease-out;
     width: 18px;
 }
-menu label span:before, label span:after {
+label span:before, label span:after {
     background-color: #F2F2F2;
     content: '';
     display: block;
@@ -296,17 +319,17 @@ menu label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
-menu label span:before {
+label span:before {
     top: 5px;
 }
-menu label span:after {
+label span:after {
     top: -5px;
 
 }
 input {
     display: none;
 }
-input:checked ~ ul {
+input:checked ~ menu {
     max-height: 500px;
    
 
@@ -349,32 +372,45 @@ input:checked ~ label:not(.steps) span:after {
 } */
 .right_icon {
     position:absolute;
-    left: 335px;
-    top: 40px;
+    margin-left: 310px;
+    margin-top: 10px;
 }
-.right_icon svg {
+svg {
     color: #EB5428;
+    font-weight: 700;
+    
 
 }
-#sideNav li {
-  
-    text-decoration: none;
-    text-transform: capitalize;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    /* flex: 1 0 60px;
-    width: 414px; */
-   
+.hamburger_left {
+    position: absolute;
+    margin-top:15px;
+    margin-left: 15px;
 }
+
+#sideNav {
+    margin-top: 20px;
+}
+
 #sideNav ul {
     width: 414px;
     display: flex;
-    padding: 0;
-    margin: 0;
+    flex-direction: row;
+    flex:  0 1 20%;
+    font-weight: 700;
+    font-size: 16px;    
+
    
-    
-} 
+}
+
+.nav_icons ul {
+    color: #EB5428;
+    font-weight: 700;
+    font-size: 16px;
+    list-style:none;
+    text-transform: capitalize;
+
+   
+}
 #ingredients {
     line-height: 2em;
 }
@@ -390,6 +426,9 @@ input:checked ~ label:not(.steps) span:after {
     width: 25%;
     padding-left: 10px;
 }
+a:hover, input:hover {
+    background-color: #EB5428;
+}
 
 menu {
     overflow: hidden;
@@ -400,6 +439,14 @@ menu {
 label {
     cursor:  pointer;
     display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+
+}
+label span {
+    background-color: #F2F2F2;
+    display: block;
     height: 2px;
     position: relative;
     transition: background-color .2s ease-out;
@@ -438,8 +485,8 @@ input:checked ~ label span::before {
     transform: rotate(-45deg);
 }
 
-input:checked ~ label apan::after {
-    transform: arotate(45deg);
+input:checked ~ label span::after {
+    transform: rotate(45deg);
 }
 input checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
@@ -482,3 +529,176 @@ svg {
     width:80px;
    
 }
+
+@media (min-width: 768px) {
+    .container {
+        outline: solid black 3px;
+        
+        width: 768px;   
+        display: grid;
+       
+    }
+    .container > * {
+        display: grid;
+        grid-column: 1 / span 12;
+        outline: solid green 3px;
+        width: 768px;
+
+    }
+  
+    .nav-container {
+       
+        outline: solid blue 3px;
+        background-color: #EB5428;
+        width: 768px;
+
+        display: grid;
+        grid-column : 1 / span 12;
+        grid-row: 1;
+    
+    }
+    nav img {
+        visibility: visible;
+        width: 20px;
+    }
+   
+    .main img {
+        width: 768px;
+    }
+    .nav_icons {
+        outline: solid red 3px;
+
+        width: 768px;
+
+        display: grid;   
+        grid-column: 1 / span 12;
+        justify-content:center;  
+    }
+    .nav_icons li {
+        display: flex;
+        flex: 1 1 100px;    
+        justify-content: space-between;
+    }
+   
+    
+    #sideNav h1 {
+        outline: solid orange 3px;
+
+        grid-column: 1 / span 12;
+        grid-row: 2;
+
+    }
+    #Details {
+        outline: solid lightblue 3px;
+
+        /* grid-column: 1 / span 12;
+        grid-row: 3; */
+    }
+    #Ingredients {
+        outline: solid lightgreen 3px;
+        width: 384px;
+        grid-column: 1 / span 5;
+        grid-row: 4;
+    }
+    #Directions {
+        outline: solid gray 3px;
+        width: 380px;
+        float: right;
+    }
+    #side_Dishes {
+        outline: solid yellow 3px;
+
+        grid-column: 1 / span 12;
+        grid-row: 6;
+    }
+    .footer-container {
+        outline: solid purple 3px;
+
+        grid-column: 1 / span 12;
+        grid-row: 6;
+    }
+    label {
+        cursor:  pointer;
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+     
+       
+        width: 18px;
+    }
+    label span:before, label span:after {
+        background: #F2F2F2;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    
+    /* label span:before {
+        top: 5px;
+    }
+    
+    label span:after {
+        top: -5px;
+    }
+    input {
+        display: none;
+    }
+    
+    input:checked ~ menu {
+        max-height: 500px;
+    }
+    
+    input:checked label span {
+        background: transparent;
+    }
+    
+    input:checked ~ label span::before {
+        transform: rotate(-45deg);
+    }
+    
+    input:checked ~ label apan::after {
+        transform: arotate(45deg);
+    }
+    input checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+        top: 0;
+    } */
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100px repeat(12 1fr);
+        grid-template-rows: 400px;
+    }
+
+    .logo_Icon {
+        grid-column : 1 / span 2;
+    }
+    menu li {
+        grid-column: 3 / span 10;
+    }
+    .menu li {
+      display: inline-block;
+       grid-column: 3 / span 10;
+        height:auto;
+        width: 1280px;
+
+        background-color: aquamarine;
+    }
+
+
+
+
+
+
+
+
+    
+}
+
