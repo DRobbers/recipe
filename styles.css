@@ -51,7 +51,7 @@ dt {
     font-weight: 700;
 }
 /* Layout for small screen first */
-.container {
+/* .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
@@ -73,7 +73,8 @@ dt {
     grid-column: 4 / 10;
     grid-row: 2;
 
-}
+} */
+/* 
 .main {
     grid-column: 1 / 13;
     grid-row: 3;
@@ -189,11 +190,12 @@ header h1 {
 [href="#home"] {
 position: absolute;
 top: 0;
-left: 207px;
-padding: 10px 5px; 
+left: 0px;
+padding: 5px, 5px; 
+padding-top: 5px;
 background-color: #EB5428;
-width: 180px;
-max-width: 180px;
+width: 70px;
+/* max-width: 80px; */
 height: 70px;
 display:flex;
 justify-content: center;
@@ -205,26 +207,29 @@ justify-content: center;
     top: 0;
 }
 
-body svg {
+/* body svg {
     height: 60px;
     width: 61px;
     
 
-}
+} */
+/* .logo_Icon svg {
+    width:30px;
+} */
 
 /* nav menu {
     list-style: none;
     margin: 0;
     padding: 0;
 } */
-nav h2 {
+/* nav h2 {
     visibility: hidden;
     height: 1px;
 }
 nav img {
     visibility:hidden;
     width: 5px;
-}
+} */
 
 h1, h2, h3 {
     text-transform: uppercase;
@@ -270,20 +275,20 @@ nav {
     
 } */
 
-menu {
+/* menu {
     text-align: center;
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none;
     overflow: hidden;
     background-color: #F2F2F2;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: max-height .2s ease-out; 
     
-}
-
+}*/
+/* 
  menu li a {
-    display: block;
+    display: flex;
     padding: 20px 20px;
     text-decoration: none;
     color:#7ABFBF;
@@ -291,17 +296,17 @@ menu {
 .menu a:hover, input:hover {
     background-color: #EB5428;
     color:#F2F2F2;
-}
- label {
+} */
+ /* label {
     cursor: pointer;
-    display: block;
+    display: flex;
     padding: 10px 20px;
     margin-top: -10px;
     position: relative;
     user-select: none;
   
-}
-
+} */
+/* 
 label span {
     background-color: #F2F2F2; 
     display: block;
@@ -348,12 +353,12 @@ input:checked span:after {
 input:checked ~ label:not(.steps) span:before,
 input:checked ~ label:not(.steps) span:after {
     top: 0;
-}
+} */
 /*  Main Section and Side Bars*/
-#main_Container {
+/* #main_Container {
     line-height: 1.5em;
     margin: 3px 8px;
-}
+} */
 /* #main_Container img {
     margin: 0;
 } */
@@ -403,6 +408,7 @@ svg {
 }
 
 .nav_icons ul {
+    display:flex;
     color: #EB5428;
     font-weight: 700;
     font-size: 16px;
@@ -430,12 +436,12 @@ a:hover, input:hover {
     background-color: #EB5428;
 }
 
-menu {
+/* menu {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
-}
-
+} */
+/* 
 label {
     cursor:  pointer;
     display: inline-block;
@@ -464,9 +470,9 @@ label span:before, label span:after {
 
 label span:before {
     top: 5px;
-}
+} */
 
-label span:after {
+/* label span:after {
     top: -5px;
 }
 input {
@@ -490,7 +496,7 @@ input:checked ~ label span::after {
 }
 input checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
-}
+} */
 
 footer h2 {
     visibility: hidden;
@@ -617,7 +623,7 @@ svg {
         grid-column: 1 / span 12;
         grid-row: 6;
     }
-    label {
+    /* label {
         cursor:  pointer;
         display: inline-block;
         height: 200px;
@@ -634,7 +640,7 @@ svg {
         position: absolute;
         transition: all .2s ease-out;
         width: 100%;
-    }
+    } */
     
     
     /* label span:before {
@@ -678,14 +684,14 @@ svg {
     }
 
     .logo_Icon {
-        grid-column : 1 / span 2;
+        grid-row : 1 / span 2;
     }
     menu li {
-        grid-column: 3 / span 10;
+        grid-row: 3 / span 10;
     }
     .menu li {
-      display: inline-block;
-       grid-column: 3 / span 10;
+      display: flex;
+       grid-row: 3 / span 10;
         height:auto;
         width: 1280px;
 
@@ -702,3 +708,7 @@ svg {
     
 }
 
+
+.container-header {
+    display:flex; 
+ } */
